@@ -1,0 +1,315 @@
+
+.container {
+    width: 65%;
+    margin: 0 auto;
+}
+
+/* CAMPAIGNS */
+.campaigns-container {
+    margin: 0;
+    padding: 15px 17% 50px 17%;
+    width: 100%;
+    background: rgb(22,255,0);
+    background: linear-gradient(164deg, rgba(22,255,0,1) 0%, rgba(219,152,15,1) 23%, rgba(248,0,255,1) 100%);
+}
+
+.campaign-list {
+    display: block;
+    width: 100%;
+}
+
+.campaign-list ul {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.campaign-list ul li {
+    display: flex;
+    list-style: none;
+    margin: 10px auto;
+    padding: 10px 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    cursor: pointer;
+    color: rgb(27, 27, 27);
+    font-weight: 600;
+}
+
+.campaign-list-active {
+    background-color: white;
+    border-radius: 25px;
+
+}
+
+.campaigns {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.campaign {
+    display: none;
+    grid-template-columns: 40% 60%;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.campaign-left {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.campaign-text {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto;
+}
+
+.campaign-text h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    width: 100%;
+    display: inline-block;
+    margin: 100px 0 0 50px;
+}
+
+.campaign-text h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: inline-block;
+    margin: 10px 0 0 50px;
+    width: 100%;
+}
+
+.campaign-text span {
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    background-color: #484848;
+    display: inline-block;
+    margin: 70px 0 0 55px;
+}
+
+.campaign-right img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.active-campaign {
+    display: grid;
+}
+
+/* SUPERB PRICE */
+.superb-price {
+    margin-top: 50px;
+}
+
+.superb-price h1 {
+    color: rgb(72, 72, 72);
+    font-size: 32px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.superb-price-products {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.superb-price-product {
+    margin: 0 5px;
+    width: 19%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.superb-price-product img {
+    width: 100%;
+}
+
+.superb-price-product:first-child img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.superb-price-product:not(:first-child) {
+    border: 1px solid #484848;
+    padding: 30px 10px 50px 10px;
+}
+
+.superb-price-product h3 {
+    font-size: 12px;
+}
+
+.superb-price-product h2 {
+    font-size: 20px;
+    color: rgb(255,96,0);
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+/* DONATION PANEL */
+.donation-panel {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.donation {
+    margin: 0 5px;
+    width: 19%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.donation h2 {
+    font-weight: 700;
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+.donation img {
+    border-radius: 10px;
+}
+
+/* BRANDS SECTION */
+.brands-section {
+    margin-top: 50px;
+}
+
+.brands-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.brands {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.brand {
+    width: 12%;
+    text-align: center;
+    align-items: center;
+}
+
+.brand img {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px -1px 0px;
+    margin-bottom: 5px;
+}
+
+/* SECTION OF POPULAR, TOPSELLER, DRESS, POPULAR DISCOUNT, MUSTHAVE*/
+.popular-section,
+.topseller-section,
+.dress-section,
+.popular-discount-section,
+.musthave-section {
+    margin-top: 50px;
+}
+
+.popular-section h1,
+.topseller-section h1,
+.dress-section h1,
+.popular-discount-section h1,
+.musthave-section h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.popular-product,
+.topseller-product,
+.dress-product,
+.popular-discount-product,
+.musthave-product {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product {
+    width: 14%;
+    margin-right: 5px;
+    border: 1px solid #a1a1a1;
+    border-radius: 10px;
+    padding: 5px 5px 35px 5px;
+    text-decoration: none;
+}
+
+.product > img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product > h4 {
+    color: #7b7b7b;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    margin-bottom: 4px;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.product > h3 {
+    color: #484848;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.product > h2 {
+    color: #439E4A;
+    font-size: 11px;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* LONGTEXT SECTION */
+.longtext {
+    margin-top: 50px;
+    margin: 50px auto;
+}
+
+.longtext h4,
+.longtext-toggle {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding: 0
+}
+
+.longtext p {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+.longtext-toggle {
+    cursor: pointer;
+}

@@ -1,0 +1,245 @@
+main {
+    width: 80%;
+    margin: 20px auto;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.left__section {
+    margin: 0 25px;
+    padding: 10px 20px;
+    border: 1px solid #727272;
+    border-radius: 10px;
+    height: 2750px;
+}
+
+.right__section {
+    margin: 0 25px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right__section-top {
+    padding: 10px;
+    border: 1px solid #727272;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.right__section-location {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px 10px;
+}
+
+.right__section-location-text h1 {
+    font-size: 1.2rem;
+}
+
+.right__section-location-text h3 {
+    font-size: .8rem;
+    color: #727272;
+}
+
+.right__section-location-bar {
+    display: inline-flex;
+    vertical-align: middle;
+    background-color: rgb(245, 205, 146);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    position: relative;
+}
+
+.right__section-location-bar * {
+    padding: 5px;
+    color: orangered;
+}
+
+.right__section-location-bar h1 {
+    font-size: 14px;
+}
+
+.right__section-location-bar input {
+    font-size: 14px;
+    outline: none;
+    border: none;
+    background-color: rgb(245, 205, 146);
+    color: orangered;
+    width: 90px;
+}
+
+.right__section-location-bar input::placeholder {
+    color: orangered;
+}
+
+.right__section-location-bar::after {
+    content: "";
+    background-color: #727272;
+    height: 160%;
+    width: 1px;
+    position: absolute;
+    left: 110%;
+}
+.right__section-early-delivery-container {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.early-delivery--container{
+    background-color: #d4d4d4;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* Customize the label (the container) */
+.early-delivery--container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #3d3d3d;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .early-delivery--container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .early-delivery--checkmark {
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 10px;
+    border: 2px solid #3d3d3d;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .early-delivery--container:hover input ~ .early-delivery--checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .early-delivery--container input:checked ~ .early-delivery--checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .early-delivery--checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .early-delivery--container input:checked ~ .early-delivery--checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .early-delivery--container .early-delivery--checkmark:after {
+    left: 7px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+
+.right__section_products {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.product {
+    border: 1px solid #d4d4d4;
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+}
+
+.product_image_container img {
+    width: 100%;
+}
+
+.product_info_container {
+    font-size: 10px;
+}
+
+.product_label {
+    background-color: rgb(191, 191, 255);
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    color: blue;
+    font-size: 9px;
+}
+
+.product_title {
+    color: #727272;
+}
+
+.product_brand {
+    font-weight: 700;
+    color: black;
+    margin: 5px 0;
+    display: inline-block;
+}
+
+.product_prev_price {
+    color: #727272;
+    font-size: 10px;
+    text-decoration:line-through;
+}
+
+.product_prev_price_discount {
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+}
+
+.product_price {
+    font-size: 12px;
+    color: green;
+}
+
+.product_prev_price_container {
+    display: inline-flex;
+    margin-bottom: 5px;
+}
